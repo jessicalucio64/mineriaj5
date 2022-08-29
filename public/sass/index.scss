@@ -1,0 +1,7 @@
+//variables $font:ar;
+@use 'variables';
+
+body{
+    background-color: variables.$primary;
+
+}

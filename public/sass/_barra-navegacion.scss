@@ -1,5 +1,5 @@
 .nav {
-  font-family: "Titillium Web";
+  font-family: 'Titillium Web';
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
@@ -7,19 +7,19 @@
 
 .nav * {
   box-sizing: border-box;
-  transition: all 0.35s ease;
+  transition: all .35s ease;
 }
 
 .nav li {
   display: inline-block;
   list-style: outside none none;
-  margin: 0.5em 1em;
+  margin: .5em 1em;
   padding: 0;
 }
 
 .nav a {
-  padding: 0.5em 0.8em;
-  color: rgba(255, 255, 255, 0.5);
+  padding: .5em .8em;
+  color: rgba(255,255,255,.5);
   position: relative;
   text-decoration: none;
   font-size: 20px;
@@ -27,16 +27,16 @@
 
 .nav a::before,
 .nav a::after {
-  content: "";
+  content: '';
   height: 14px;
   width: 14px;
   position: absolute;
-  transition: all 0.35s ease;
+  transition: all .35s ease;
   opacity: 0;
 }
 
 .nav a::before {
-  content: "";
+  content: '';
   right: 0;
   top: 0;
   border-top: 3px solid #3E8914;
@@ -45,26 +45,20 @@
 }
 
 .nav a:after {
-  content: "";
+  content: '';
   left: 0;
   bottom: 0;
   border-bottom: 3px solid #2E640F;
   border-left: 3px solid #3E8914;
-  transform: translate(100%, -50%);
+  transform: translate(100%, -50%)
 }
 
 .nav a:hover:before,
-.nav a:hover:after {
-  transform: translate(0, 0);
+.nav a:hover:after{
+  transform: translate(0,0);
   opacity: 1;
 }
 
 .nav a:hover {
   color: #3DA35D;
 }
-
-body {
-  background-color: blue;
-}
-
-/*# sourceMappingURL=index.css.map */

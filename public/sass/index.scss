@@ -1,5 +1,7 @@
 //variables $font:ar;
 @use 'variables';
+@use 'barra_navegacion';
+@use 'footer';
 
 body{
     background-color: variables.$primary;

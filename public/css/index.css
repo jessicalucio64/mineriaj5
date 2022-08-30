@@ -1,33 +1,45 @@
-.menu {
+:root {
+  --amarillo:#FFCC30;
+  --negro:#1E1D1C;
+  --gris:#9B9B9B;
+  --naranja:#F38B00;
+  --grisclaro:#E0E0E0;
+  --amarilloclaro:#FFDA00;
+  --naranja1:#FF8B00;
+  --naranja2:#FF6700;
+  --grisf:#F4F4F4;
+}
+
+.navbar {
   display: flex;
   width: 100%;
   align-items: center;
 }
-.menu .logo {
+.navbar .logo {
   width: 8%;
   margin-left: 2%;
 }
-.menu .nav {
+.navbar .nav {
   width: 85%;
   font-family: "Arial";
   text-transform: uppercase;
   text-align: right;
   font-weight: 600;
 }
-.menu .nav li {
+.navbar .nav li {
   display: inline-block;
   list-style: outside none none;
   margin: 0.5em 1em;
   padding: 0;
 }
-.menu .nav a {
+.navbar .nav a {
   padding: 0 0.1em 0.01em;
-  color: black;
+  color: var(--negro);
   position: relative;
   text-decoration: none;
   font-size: 1em;
 }
-.menu .nav a::before, .menu .nav a::after {
+.navbar .nav a::before, .navbar .nav a::after {
   content: "";
   height: 20px;
   width: 100%;
@@ -35,13 +47,13 @@
   transition: all 0.35s ease;
   opacity: 0;
 }
-.menu .nav a::before {
+.navbar .nav a::before {
   content: "";
   right: 0;
   top: 0;
-  border-bottom: 3px solid #f3ff4f;
+  border-bottom: 3px solid var(--amarilloclaro);
 }
-.menu .nav a:hover:before, .menu .nav a:hover:after {
+.navbar .nav a:hover:before, .navbar .nav a:hover:after {
   transform: translate(0, 0);
   opacity: 1;
 }

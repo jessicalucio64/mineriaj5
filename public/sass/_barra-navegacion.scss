@@ -13,9 +13,7 @@
     text-transform: uppercase;
     text-align: right;
     font-weight: 600;
-    & * {
-     
-    }
+    
     & li {
       display: inline-block;
       list-style: outside none none;
@@ -26,7 +24,7 @@
     & a {
       
       padding: .0.1em .01em;
-      color: black;
+      color: var(--negro);
       position: relative;
       text-decoration: none;
       font-size: 1em;
@@ -47,7 +45,7 @@
       content: '';
       right: 0;
       top: 0;
-      border-bottom: 3px solid #f3ff4f;
+      border-bottom: 3px solid var(--amarillo);
       
     }
     

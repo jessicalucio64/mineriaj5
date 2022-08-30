@@ -34,7 +34,7 @@
 }
 .menu .nav a {
   padding: 0 0.1em 0.01em;
-  color: black;
+  color: var(--negro);
   position: relative;
   text-decoration: none;
   font-size: 1em;
@@ -51,7 +51,7 @@
   content: "";
   right: 0;
   top: 0;
-  border-bottom: 3px solid #f3ff4f;
+  border-bottom: 3px solid var(--amarillo);
 }
 .menu .nav a:hover:before, .menu .nav a:hover:after {
   transform: translate(0, 0);

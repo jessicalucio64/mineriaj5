@@ -1,0 +1,10 @@
+.container-fluid{
+    width: 100%;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    .row{
+        background-color: blue;
+        width: 80%;
+    }
+}

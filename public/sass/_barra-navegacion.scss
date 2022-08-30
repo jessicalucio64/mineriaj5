@@ -1,7 +1,9 @@
 .menu{
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items:center;
+  justify-content: center;
+  
   
   .logo{
     width: 8%;
@@ -11,8 +13,9 @@
     width: 85%;
     font-family: 'Arial';
     text-transform: uppercase;
-    text-align: right;
     font-weight: 600;
+    display: flex;
+    justify-content: end;
     
     & li {
       display: inline-block;

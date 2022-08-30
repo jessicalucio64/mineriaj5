@@ -1,70 +1,81 @@
-.nav {
-  font-family: "Titillium Web";
+.menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.menu .logo {
+  width: 8%;
+  margin-left: 2%;
+}
+.menu .nav {
+  width: 85%;
+  font-family: "Arial";
   text-transform: uppercase;
-  text-align: center;
+  text-align: right;
   font-weight: 600;
 }
-
-.nav * {
-  box-sizing: border-box;
-  transition: all 0.35s ease;
-}
-
-.nav li {
+.menu .nav li {
   display: inline-block;
   list-style: outside none none;
   margin: 0.5em 1em;
   padding: 0;
 }
-
-.nav a {
-  padding: 0.5em 0.8em;
-  color: rgba(255, 255, 255, 0.5);
+.menu .nav a {
+  padding: 0 0.1em 0.01em;
+  color: black;
   position: relative;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1em;
 }
-
-.nav a::before,
-.nav a::after {
+.menu .nav a::before, .menu .nav a::after {
   content: "";
-  height: 14px;
-  width: 14px;
+  height: 20px;
+  width: 100%;
   position: absolute;
   transition: all 0.35s ease;
   opacity: 0;
 }
-
-.nav a::before {
+.menu .nav a::before {
   content: "";
   right: 0;
   top: 0;
-  border-top: 3px solid #3E8914;
-  border-right: 3px solid #2E640F;
-  transform: translate(-100%, 50%);
+  border-bottom: 3px solid #f3ff4f;
 }
-
-.nav a:after {
-  content: "";
-  left: 0;
-  bottom: 0;
-  border-bottom: 3px solid #2E640F;
-  border-left: 3px solid #3E8914;
-  transform: translate(100%, -50%);
-}
-
-.nav a:hover:before,
-.nav a:hover:after {
+.menu .nav a:hover:before, .menu .nav a:hover:after {
   transform: translate(0, 0);
   opacity: 1;
 }
 
-.nav a:hover {
-  color: #3DA35D;
-}
-
-body {
-  background-color: blue;
+@media (max-width: 991px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #98dbc6;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

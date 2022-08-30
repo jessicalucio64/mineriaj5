@@ -18,5 +18,8 @@
     "url": "https://github.com/jessicalucio64/mineriaj5/issues"
   },
   "homepage": "https://github.com/jessicalucio64/mineriaj5#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
 }

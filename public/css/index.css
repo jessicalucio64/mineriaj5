@@ -124,6 +124,57 @@
     display: none;
   }
 }
+.home__header {
+  background-image: url(../images/home/escritorio/fondo_01.webp);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home__header .home__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+}
+.home__header .home__container .home__texto {
+  width: 30%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.home__header .home__container .home__texto h1 {
+  font-size: 3rem;
+}
+.home__header .home__container .home__texto p {
+  font-size: 1.3rem;
+  margin-bottom: 8%;
+}
+.home__header .home__container .home__texto .btn__enviar__mensaje {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--negro);
+  border: solid 2px var(--amarillo);
+  color: white;
+}
+.home__header .home__container .home__texto .btn__enviar__mensaje .boton__icono {
+  width: 30px;
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 991px) {
+  .btn__enviar__mensaje {
+    padding: 4px;
+    border-radius: 5px;
+    background-color: var(--negro);
+    border: solid 2px var(--amarillo);
+    color: white;
+  }
+  .btn__enviar__mensaje .boton__icono {
+    width: 20px;
+    padding-right: 5px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

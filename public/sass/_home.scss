@@ -48,13 +48,20 @@
     .consultoria__container__texto{
         display: flex;
         width: 80%;
+        gap: 10%;
+        justify-content: center;
+        align-items: center;
         .texto{
             width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap:50px;
         }
         .imagen_consultoria{
             width: 50%;
             img{
-                width: 50%;
+                width: 70%;
+
             }
         }
     }

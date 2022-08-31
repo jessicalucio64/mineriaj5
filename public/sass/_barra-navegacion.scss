@@ -31,28 +31,31 @@
       position: relative;
       text-decoration: none;
       font-size: 1em;
+     
       
     }
     
     & a::before,
     & a::after {
       content: '';
-      height: 20px;
+      height: 0px;
       width: 100%;
       position: absolute;
       transition: all .35s ease;
       opacity: 0;
+      
+      
+      
     }
     
     & a::before {
       content: '';
       right: 0;
-      top: 0;
+      top: 80%;
       border-bottom: 3px solid var(--amarillo);
+
       
     }
-    
-   
     
     & a:hover:before,
     & a:hover:after{

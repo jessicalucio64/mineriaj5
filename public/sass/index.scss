@@ -2,8 +2,15 @@
 @use 'variables';
 @use 'barra-navegacion';
 @use 'footer';
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     //background-color: variables.$primary;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
    
 }

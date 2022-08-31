@@ -21,6 +21,7 @@
                 font-size: 1.3rem;
                 margin-bottom: 8%;
             }
+            
             .btn__enviar__mensaje {
                 padding: 15px;
                 border-radius: 5px;
@@ -37,20 +38,59 @@
         }
     }
 }
-
+.consultoria__container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    .consultoria__container__texto{
+        display: flex;
+        width: 80%;
+        .texto{
+            width: 50%;
+        }
+        .imagen_consultoria{
+            width: 50%;
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
   
   
   @media screen and (max-width: 991px) {
-    .btn__enviar__mensaje {
-      padding: 4px;
-      border-radius: 5px;
-      background-color: var(--negro);
-      border: solid 2px var(--amarillo);
-      color: white;
-      .boton__icono {
-        width: 20px;
-        padding-right: 5px;
-      }
+
+    .home__header{
+        
+        background-position: left;
+
+        .home__container{
+          
+            .home__texto{
+                width: 50%;
+                margin-top: 30%;
+                
+                .btn__enviar__mensaje {
+                    padding: 4px;
+                    border-radius: 5px;
+                    background-color: var(--negro);
+                    border: solid 2px var(--amarillo);
+                    color: white;
+                    .boton__icono {
+                      width: 20px;
+                      padding-right: 5px;
+                    }
+                }
+                  
+                
+            }
+
+        }
     }
+    
+    
     
   }    

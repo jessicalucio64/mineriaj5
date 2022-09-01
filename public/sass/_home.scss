@@ -19,7 +19,13 @@
             }
             p{
                 font-size: 1.3rem;
-                margin-bottom: 8%;
+                margin-top: 20%;
+            }
+            .txt-rotate{
+                color: var(--amarillo);
+                font-size: 3rem;
+                position: absolute;
+                
             }
             
             .btn__enviar__mensaje {
@@ -52,29 +58,129 @@
         justify-content: center;
         align-items: center;
         .texto{
-            width: 50%;
+            width: 30%;
             display: flex;
             flex-direction: column;
             gap:50px;
+            .text__consultoria{
+                font-size: 3rem;
+                position: relative;
+                
+
+            }
+            .text__consultoria::before{  
+                content: '';
+                border-color:  #a8cf45;
+                border-style: solid;
+                border-width: 70px;
+                border-left: 250px;
+                border-top: 100px;
+                border-bottom: 100px; 
+                z-index: -10;
+            }
+            
         }
         .imagen_consultoria{
             width: 50%;
             img{
-                width: 70%;
+                width: 100%;
 
             }
         }
     }
+    .consultoria__container__iconos{
+        display: flex;
+        width: 80%;
+        
+        .container_icono{
+            display: flex;
+            margin-top: 10%;
+            width: 100%;
+            gap: 10%;
+            justify-content: center;
+            align-items: center;
+            gap: 20%;
+            
+            .iconos{
+                width: 15%;
+            }
+           
+
+        }
+    }
 }
-h1,h2 {
-    font-weight: 200;
-    margin: 0.4em 0;
-  }
-  h1 { font-size: 3.5em; }
-  h2 {
-    color: #888;
-    font-size: 2em;
-  }
+.contenedor__alianza{
+    background-image: url(../images/home/escritorio/fondo_02.webp);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15%;
+
+    .contenedor{
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+        
+        .alianzas__container__texto{
+            width: 50%;
+            .texto{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                gap:50px;
+                .text__consultoria{
+                    font-size: 3rem;
+                    position: relative;
+                    
+    
+                }
+                .text__consultoria::before{  
+                    content: '';
+                    border-color:  #a8cf45;
+                    border-style: solid;
+                    border-width: 70px;
+                    border-left: 250px;
+                    border-top: 100px;
+                    border-bottom: 100px; 
+                    z-index: -10;
+                }
+                
+            }
+
+        }
+        .alianzas__container__iconos{
+            width: 50%;
+            display: flex;
+            .container_icono{
+                display: flex;
+                margin-top: 10%;
+                width: 100%;
+                gap: 10%;
+                justify-content: center;
+                align-items: center;
+                gap: 20%;
+                
+                .iconos{
+                    width: 25%;
+                }
+               
+    
+            }
+
+        }
+
+
+    }
+
+    
+}
+
   
   @media screen and (max-width: 991px) {
 
@@ -104,6 +210,104 @@ h1,h2 {
             }
 
         }
+    }
+    .consultoria__container{
+        
+        .consultoria__container__texto{
+            
+            flex-direction: column;
+            width: 80%;
+            justify-content: center;
+            align-items: flex-start;
+            .texto{
+                width: 80%;
+                font-size: 1.5rem;
+                
+            }
+            .imagen_consultoria{
+                display: none;
+            }
+        }
+        .consultoria__container__iconos{
+            
+            .container_icono{
+                flex-direction: column;
+                gap: 50px;
+                
+                .iconos{
+                    width: 35%;
+                   
+                }
+    
+            }
+        }
+    }
+    .contenedor__alianza{
+        background-image: url(../images/home/escritorio/fondo_02.webp);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -15%;
+    
+        .contenedor{
+            flex-direction: column;
+            
+            .alianzas__container__texto{
+                width: 90%;
+                .texto{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    gap:50px;
+                    .text__consultoria{
+                        font-size: 3rem;
+                        position: relative;
+                        
+        
+                    }
+                    .text__consultoria::before{  
+                        content: '';
+                        border-color:  #a8cf45;
+                        border-style: solid;
+                        border-width: 70px;
+                        border-left: 250px;
+                        border-top: 100px;
+                        border-bottom: 100px; 
+                        z-index: -10;
+                    }
+                    
+                }
+    
+            }
+            .alianzas__container__iconos{
+                width: 90%;
+                display: flex;
+                .container_icono{
+                    display: flex;
+                    margin-top: 10%;
+                    width: 100%;
+                    gap: 10%;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20%;
+                    
+                    .iconos{
+                        width: 25%;
+                    }
+                   
+        
+                }
+    
+            }
+    
+    
+        }
+    
+        
     }
     
     

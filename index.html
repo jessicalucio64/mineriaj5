@@ -45,10 +45,10 @@
       <div class="home__container">
         <div class="home__texto">
           <h1>Facilitamos el día a día de las mineras con:</h1>
-          <div class="console-container">
-            <span id="text"></span>
-            <div class="console-underscore" id="console">&#95;</div>
-          </div>
+          <span
+          class="txt-rotate"
+          data-period="2000"
+          data-rotate='[ "Consultoría", "Alianzas", "Laboratorio" ]'></span>
 
           <p>
             J5 es un equipo de ingenieros enfocados en facilitar la toma de
@@ -70,10 +70,13 @@
       </div>
     </section>
     <section class="consultoria">
+        <div class="decoracion">
+          <img src="" alt="">
+        </div>
         <div class="consultoria__container">
             <div class="consultoria__container__texto">
                 <div class="texto">
-                    <h2>Consultoría</h2>
+                    <h2 class="text__consultoria">Consultoría</h2>
                     <p>J5 utiliza la capacitación y la experimentación para
                         crear valor real para sus clientes y, al hacerlo, espera
                         establecer una relación laboral duradera, incluso en
@@ -85,7 +88,18 @@
 
             </div>
             <div class="consultoria__container__iconos">
-                HOLA
+                <div class="container_icono">
+                  <a href="" class="iconos">      
+                    <img src="./public/images/home/iconografia/capacitacion_procesos_negativo.svg" class="" alt="">
+
+                  </a>
+                  <a href="" class="iconos">      
+                    <img src="./public/images/home/iconografia/optimizacion_de_procesos_negativo.svg" alt="">
+                  </a>
+                  <a href="" class="iconos">      
+                    <img src="./public/images/home/iconografia/experimentacion_metalurgica_negativo.svg" alt="">
+                  </a>
+                </div>
                
 
             </div>
@@ -94,13 +108,39 @@
         </div>
 
     </section>
-    <h1>This pen is
-      <span
-         class="txt-rotate"
-         data-period="2000"
-         data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
-    </h1>
-    <h2>A single &lt;span&gt; is all you need.</h2>
+    <section class="alianzas">
+      <div class="contenedor__alianza">
+        <div class="contenedor">
+          <div class="alianzas__container__texto">
+            <div class="texto">
+                <h2 class="text__consultoria">Alianzas</h2>
+                <p>Estamos creando una nueva estrategia de relaciones
+                  comerciales con nuestros socios actuales y futuros
+                  socios, para crear más valor entre nuestras empresas y
+                  para el mundo minero-metalúrgico, Ganar:ganar.</p>
+            </div>
+    
+          </div>
+          <div class="alianzas__container__iconos">
+            <div class="container_icono">
+              <a href="" class="iconos">      
+                <img src="./public/images/home/iconografia/productos_quimicos_negativo.svg" class="" alt="">
+      
+              </a>
+              <a href="" class="iconos">      
+                <img src="./public/images/home/iconografia/materiales_negativo.svg" alt="">
+              </a>
+            
+            </div>
+          
+      
+          </div>
+
+        </div>
+      </div>
+    
+    
+  </section>
 
   </body>
   <footer class="pie-pagina">

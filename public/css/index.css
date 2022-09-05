@@ -191,7 +191,7 @@
   align-items: center;
 }
 .consultoria__container .consultoria__container__texto .texto {
-  width: 90%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -202,6 +202,9 @@
   display: inline-block;
   z-index: 1;
   margin-left: 3%;
+}
+.consultoria__container .consultoria__container__texto .texto .parrafo__consultoria {
+  font-size: 1rem;
 }
 .consultoria__container .consultoria__container__texto .texto .text__consultoria::before {
   content: "";

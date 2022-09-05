@@ -720,9 +720,6 @@ h3 {
   .container__contribuciones .contribuciones__container .contribuciones__img {
     width: 50%;
   }
-  .container__contribuciones .contribuciones__container .contribuciones__img ul {
-    width: 10%;
-  }
   .container__contribuciones .contribuciones__container .contribuciones__img ul .booking-card .book-container .content {
     opacity: 1;
     transform: translateY(0px);
@@ -744,6 +741,13 @@ h3 {
     font-size: 1rem;
     margin-top: 35%;
     width: 150%;
+  }
+  .container__contribuciones .contribuciones__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
   }
 }
 * {

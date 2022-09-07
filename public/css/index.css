@@ -82,6 +82,15 @@
 }
 .pie-pagina .grupo-1 .lista {
   margin-left: 30%;
+  background-color: red;
+}
+.pie-pagina .grupo-1 .lista ul {
+  background-color: red;
+}
+.pie-pagina .grupo-1 .pie-pagina .grupo-1 ul {
+  padding-left: 0rem;
+  list-style-type: none;
+  display: block;
 }
 .pie-pagina .grupo-1 .lista2 {
   width: 50%;
@@ -123,6 +132,7 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
